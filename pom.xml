@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns="http://maven.apache.org/POM/4.0.0"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.springframework.samples</groupId>
   <artifactId>spring-petclinic</artifactId>
-  <version>2.4.5-SNAPSHOT</version>
+  <version>2.4.6-SNAPSHOT</version>
 
   <scm>
     <developerConnection>
         scm:git:git@github.com:VladimirMaljkovic/devops-capstone-project.git
     </developerConnection>
     <connection>scm:git:https://github.com/VladimirMaljkovic/devops-capstone-project.git</connection>
-    <tag>2.4.5</tag>
+    <tag></tag>
   </scm>
 
   <distributionManagement>
     <repository>
-        <id>maven-hosted-release</id>
-        <name>maven hosted release</name>
-        <url>http://172.16.238.7:8081/repository/maven-hosted-release/</url>
+      <id>maven-group</id>
+      <name>Internal Releases</name>
+      <url>http://172.16.238.7:8081/repository/maven-hosted-release/</url>
     </repository>
+
+    <snapshotRepository>
+      <id>maven-group</id>
+      <name>Internal Releases</name>
+      <url>http://172.16.238.7:8081/repository/maven-hosted-snapshot/</url>
+    </snapshotRepository>
+
   </distributionManagement>   
 
   <parent>
@@ -361,7 +366,7 @@
                         </goals>
                       </pluginExecutionFilter>
                       <action>
-                        <ignore/>
+                        <ignore />
                       </action>
                     </pluginExecution>
                     <pluginExecution>
@@ -374,7 +379,7 @@
                         </goals>
                       </pluginExecutionFilter>
                       <action>
-                        <ignore/>
+                        <ignore />
                       </action>
                     </pluginExecution>
                     <pluginExecution>
@@ -387,7 +392,7 @@
                         </goals>
                       </pluginExecutionFilter>
                       <action>
-                        <ignore/>
+                        <ignore />
                       </action>
                     </pluginExecution>
                   </pluginExecutions>
