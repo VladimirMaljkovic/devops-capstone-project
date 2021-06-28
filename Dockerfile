@@ -1,5 +1,11 @@
 FROM openjdk:8-jdk-alpine
-COPY target/*.jar /app/app.jar
-ENTRYPOINT ["java",  "-jar", "/app/app.jar"]
 
-# unneccesary comment
+ARG VERSION
+
+ENV VERSION_ENV=${VERSION}
+
+COPY petclinic-${VERSION}.jar /app/petclinic-${VERSION}.jar
+
+RUN ls app/
+
+ENTRYPOINT java -jar /app/petclinic-${VERSION_ENV}.jar
