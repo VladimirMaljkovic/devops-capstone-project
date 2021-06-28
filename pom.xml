@@ -17,10 +17,17 @@
 
   <distributionManagement>
     <repository>
-        <id>maven-hosted-release</id>
-        <name>maven hosted release</name>
-        <url>http://172.16.238.7:8081/repository/maven-hosted-release/</url>
+      <id>maven-group</id>
+      <name>Internal Releases</name>
+      <url>http://172.16.238.7:8081/repository/maven-hosted-release/</url>
     </repository>
+
+    <snapshotRepository>
+      <id>maven-group</id>
+      <name>Internal Releases</name>
+      <url>http://172.16.238.7:8081/repository/maven-hosted-snapshot/</url>
+    </snapshotRepository>
+
   </distributionManagement>   
 
   <parent>
