@@ -6,11 +6,11 @@
   <version>2.4.7-SNAPSHOT</version>
 
   <scm>
-    <developerConnection>
+    <!-- <developerConnection>
         scm:git:git@github.com:VladimirMaljkovic/devops-capstone-project.git
-    </developerConnection>
+    </developerConnection> -->
     <connection>scm:git:git@github.com:VladimirMaljkovic/devops-capstone-project.git</connection>
-    <tag>HEAD</tag>
+    <!-- <tag>HEAD</tag> -->
   </scm>
 
   <distributionManagement>
