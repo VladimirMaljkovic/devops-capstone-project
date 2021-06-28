@@ -17,9 +17,9 @@
 
   <distributionManagement>
     <repository>
-        <id>maven-hosted-snapshots</id>
-        <name>maven hosted snapshopts</name>
-        <url>http://172.16.238.7:8081/repository/maven-hosted-snapshots/</url>
+        <id>maven-hosted-releases</id>
+        <name>maven hosted releases</name>
+        <url>http://172.16.238.7:8081/repository/maven-hosted-releases/</url>
     </repository>
   </distributionManagement>   
 
