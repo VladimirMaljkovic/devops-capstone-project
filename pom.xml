@@ -17,9 +17,9 @@
 
   <distributionManagement>
     <repository>
-        <id>maven-hosted-releases</id>
-        <name>maven hosted releases</name>
-        <url>http://172.16.238.7:8081/repository/maven-hosted-releases/</url>
+        <id>maven-hosted-release</id>
+        <name>maven hosted release</name>
+        <url>http://172.16.238.7:8081/repository/maven-hosted-release/</url>
     </repository>
   </distributionManagement>   
 
