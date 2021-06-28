@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<checkstyle version="8.32">
-<file name="/home/vladimir/docker/practice/spring-petclinic/Dockerfile">
-</file>
-<file name="/home/vladimir/docker/practice/spring-petclinic/Jenkinsfile">
-</file>
-</checkstyle>
