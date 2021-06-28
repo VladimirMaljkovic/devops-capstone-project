@@ -7,6 +7,20 @@
   <artifactId>spring-petclinic</artifactId>
   <version>2.4.5</version>
 
+  <scm>
+    <developerConnection>
+        scm:git:git@github.com:VladimirMaljkovic/devops-capstone-project.git
+    </developerConnection>
+  </scm>
+
+  <distributionManagement>
+    <repository>
+        <id>maven-hosted-release</id>
+        <name>maven hosted release</name>
+        <url>http://172.16.238.7:8081/repository/maven-hosted-release/</url>
+    </repository>
+  </distributionManagement>   
+
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
