@@ -5,12 +5,14 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.springframework.samples</groupId>
   <artifactId>spring-petclinic</artifactId>
-  <version>2.4.5</version>
+  <version>2.4.5-SNAPSHOT</version>
 
   <scm>
     <developerConnection>
         scm:git:git@github.com:VladimirMaljkovic/devops-capstone-project.git
     </developerConnection>
+    <connection>scm:git:https://github.com/VladimirMaljkovic/devops-capstone-project.git</connection>
+    <tag>2.4.5</tag>
   </scm>
 
   <distributionManagement>
@@ -169,7 +171,7 @@
         <executions>
           <execution>
             <id>nohttp-checkstyle-validation</id>
-            <phase>validate</phase>
+            <phase>none</phase>
             <configuration>
               <configLocation>src/checkstyle/nohttp-checkstyle.xml</configLocation>
               <suppressionsLocation>src/checkstyle/nohttp-checkstyle-suppressions.xml</suppressionsLocation>
