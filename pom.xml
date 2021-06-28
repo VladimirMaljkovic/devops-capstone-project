@@ -10,7 +10,7 @@
         scm:git:git@github.com:VladimirMaljkovic/devops-capstone-project.git
     </developerConnection>
     <connection>scm:git:https://github.com/VladimirMaljkovic/devops-capstone-project.git</connection>
-    <tag></tag>
+    <tag>HEAD</tag>
   </scm>
 
   <distributionManagement>
