@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.springframework.samples</groupId>
   <artifactId>spring-petclinic</artifactId>
   <version>2.4.5-SNAPSHOT</version>
+
+  <scm>
+    <developerConnection>
+        scm:git:git@github.com:VladimirMaljkovic/devops-capstone-project.git
+    </developerConnection>
+    <connection>scm:git:https://github.com/VladimirMaljkovic/devops-capstone-project.git</connection>
+    <tag>2.4.5</tag>
+  </scm>
+
+  <distributionManagement>
+    <repository>
+        <id>maven-hosted-release</id>
+        <name>maven hosted release</name>
+        <url>http://172.16.238.7:8081/repository/maven-hosted-release/</url>
+    </repository>
+  </distributionManagement>   
 
   <parent>
     <groupId>org.springframework.boot</groupId>
@@ -12,22 +29,6 @@
     <version>2.4.5</version>
   </parent>
   <name>petclinic</name>
-
-
-  <distributionManagement>
-    <repository>
-      <id>maven-group</id>
-      <name>Internal Releases</name>
-      <url>http://172.16.238.7:8081/repository/maven-hosted-release/</url>
-    </repository>
-
-    <snapshotRepository>
-      <id>maven-group</id>
-      <name>Internal Releases</name>
-      <url>http://172.16.238.7:8081/repository/maven-hosted-snapshot/</url>
-    </snapshotRepository>
-
-  </distributionManagement>
 
   <properties>
 
@@ -77,12 +78,12 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
-      <exclusions>
-        <exclusion>
-          <groupId>org.junit.vintage</groupId>
-          <artifactId>junit-vintage-engine</artifactId>
-        </exclusion>
-      </exclusions>
+        <exclusions>
+            <exclusion>
+                <groupId>org.junit.vintage</groupId>
+                <artifactId>junit-vintage-engine</artifactId>
+            </exclusion>
+        </exclusions>
     </dependency>
 
     <!-- Databases - Uses H2 by default -->
@@ -170,7 +171,7 @@
         <executions>
           <execution>
             <id>nohttp-checkstyle-validation</id>
-            <phase>validate</phase>
+            <phase>none</phase>
             <configuration>
               <configLocation>src/checkstyle/nohttp-checkstyle.xml</configLocation>
               <suppressionsLocation>src/checkstyle/nohttp-checkstyle-suppressions.xml</suppressionsLocation>
