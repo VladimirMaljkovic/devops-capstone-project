@@ -8,4 +8,4 @@ COPY petclinic-${VERSION}.jar /app/petclinic-${VERSION}.jar
 
 RUN ls app/
 
-ENTRYPOINT java -jar /app/spring-petclinic-${VERSION_ENV}.jar
+ENTRYPOINT java -jar /app/petclinic-${VERSION_ENV}.jar
