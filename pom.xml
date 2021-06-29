@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.springframework.samples</groupId>
   <artifactId>spring-petclinic</artifactId>
-  <version>2.4.7-SNAPSHOT</version>
+  <version>2.4.7</version>
 
   <scm>
     <!-- <developerConnection>
@@ -11,6 +11,7 @@
     </developerConnection> -->
     <connection>scm:git:git@github.com:VladimirMaljkovic/devops-capstone-project.git</connection>
     <!-- <tag>HEAD</tag> -->
+    <tag>spring-petclinic-2.4.7</tag>
   </scm>
 
   <distributionManagement>
